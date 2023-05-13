@@ -1,4 +1,4 @@
-import coffeeImage from 'assets/coffee-2.jpg';
+import coffeeImage from 'assets/coffee-shop-3.jpg';
 
 export default function Banner() {
   return (

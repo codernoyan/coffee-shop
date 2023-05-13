@@ -101,7 +101,7 @@ export default function Register() {
           </div>
           {errors.password && <p className="mt-1 text-red-500 font-semibold">{errors.password?.message}</p>}
           <div className="mt-6">
-            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-slate-500 rounded-md hover:bg-slate-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-slate-700 rounded-md hover:bg-slate-800 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
               Register
             </button>
             <p className="mt-4 text-center text-gray-600 dark:text-gray-400">or sign in with</p>
