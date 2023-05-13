@@ -1,42 +1,70 @@
-import { useState } from "react";
+import { AuthContext } from "contexts/AuthProvider";
+import { useContext, useState } from "react";
+import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
+import Loading from "ui/Loading";
 
 export default function Navbar() {
+  const { user, logoutUser, loading, setLoading } = useContext(AuthContext);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+
+  // handle log out
+  const handleLogout = () => {
+    logoutUser()
+      .then(() => {
+        setLoading(false);
+        toast.success('Logout Successful');
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error(error.message);
+      })
+  };
 
   // navbar menus
   const menus = <>
-    <li role="none" className="flex items-stretch mr-4">
-      <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
-        <Link to="/login"
-          className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
-        >
-          <span
-            className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
-          ></span>
+    {
+      user?.uid ?
+        <li role="none" className="flex items-stretch">
+          <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
+            <button onClick={handleLogout}
+              type="button"
+              className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
+            >
+              <span
+                className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+              ></span>
 
-          <span className="relative block border border-current bg-white font-bold px-8 py-3">
-            Login
-          </span>
-        </Link>
-      </div>
-    </li>
-    <li role="none" className="flex items-stretch">
-      <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
-        <Link to="/register"
-          className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
-        >
-          <span
-            className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
-          ></span>
+              <span className="relative block border border-current bg-white font-bold px-8 py-3">
+                Logout
+              </span>
+            </button>
+          </div>
+        </li>
+        :
+        <li role="none" className="flex items-stretch">
+          <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
+            <Link to="/login"
+              className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
+            >
+              <span
+                className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+              ></span>
 
-          <span className="relative block border border-current bg-white font-bold px-8 py-3">
-            Register
-          </span>
-        </Link>
-      </div>
-    </li>
+              <span className="relative block border border-current bg-white font-bold px-8 py-3">
+                Login
+              </span>
+            </Link>
+          </div>
+        </li>
+    }
   </>
+
+
+  if (loading) {
+    return <Loading />
+  }
+
 
   return (
     <section className="w-full z-50">
