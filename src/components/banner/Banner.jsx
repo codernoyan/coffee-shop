@@ -8,8 +8,8 @@ export default function Banner() {
       </div>
       <div className="flex justify-center items-center bg-slate-100">
         <div className="text-center space-y-6">
-          <h2 className="text-4xl md:text-6xl font-bold">For your enjoy-mint</h2>
-          <p className="text-xl font-medium text-slate-500">Hooray for our newest cooler-than-cool Chocolate Java Mint Frappuccino® blended beverage.</p>
+          <h2 className="text-4xl md:text-6xl font-bold">For your mind refreshness</h2>
+          <p className="text-xl font-medium text-slate-500">Hooray for our newest cooler-than-cool Chocolate Java Mint Frappuccino blended beverage.</p>
         </div>
       </div>
     </section>
