@@ -6,9 +6,9 @@ export default function Navbar() {
 
   // navbar menus
   const menus = <>
-    <li role="none" className="flex items-stretch">
+    <li role="none" className="flex items-stretch mr-4">
       <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
-        <button
+        <Link to="/login"
           className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
         >
           <span
@@ -18,7 +18,22 @@ export default function Navbar() {
           <span className="relative block border border-current bg-white font-bold px-8 py-3">
             Login
           </span>
-        </button>
+        </Link>
+      </div>
+    </li>
+    <li role="none" className="flex items-stretch">
+      <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
+        <Link to="/register"
+          className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
+        >
+          <span
+            className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+          ></span>
+
+          <span className="relative block border border-current bg-white font-bold px-8 py-3">
+            Register
+          </span>
+        </Link>
       </div>
     </li>
   </>
