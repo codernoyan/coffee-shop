@@ -48,9 +48,12 @@ export default function Register() {
         const user = result.user;
         console.log(user);
         toast.success('Register with Google successful');
+        setLoading(false);
         navigate('/');
       })
       .catch((error) => {
+        setLoading(false);
+        navigate('/register');
         console.error(error);
         toast.error(error.message);
       })

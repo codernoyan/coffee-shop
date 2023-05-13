@@ -26,9 +26,9 @@ export default function Login() {
         navigate(from, { replace: true });
       })
       .catch((error) => {
-        setLoading(false);
         console.error(error);
         toast.error(error.message);
+        setLoading(false);
       })
   }
 
@@ -39,9 +39,12 @@ export default function Login() {
         const user = result.user;
         console.log(user);
         toast.success('Register with Google successful');
+        setLoading(false);
         navigate(from, { replace: true });
       })
       .catch((error) => {
+        setLoading(false);
+        navigate('/login');
         console.error(error);
         toast.error(error.message);
       })
@@ -50,6 +53,7 @@ export default function Login() {
   if (loading) {
     return <Loading />
   }
+
   return (
     <section>
       <div className="container flex flex-col items-center justify-center min-h-screen px-6 mx-auto">
