@@ -8,10 +8,10 @@ export default function Navbar() {
     <li role="none" className="flex items-stretch">
       <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
         <button
-          className="group relative inline-block text-sm font-medium text-emerald-600 focus:outline-none focus:ring active:text-emerald-500"
+          className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500"
         >
           <span
-            className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-emerald-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+            className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
           ></span>
 
           <span className="relative block border border-current bg-white font-bold px-8 py-3">
@@ -38,7 +38,7 @@ export default function Navbar() {
               aria-current="page"
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
             >
-              <a href="/#home" className="font-bold text-emerald-700">Coffeebeans</a>
+              <a href="/#home" className="font-bold text-slate-700">Coffeebeans</a>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button
