@@ -1,18 +1,29 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
+import Loading from "ui/Loading";
 
 export default function Menus() {
   const [menus, setMenus] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch(`${import.meta.env.VITE_API_URL}/coffees`)
       .then((res) => res.json())
-      .then((data) => setMenus(data))
-      .catch((error) => console.log(error.message))
+      .then((data) => {
+        setMenus(data)
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error.message);
+        setLoading(false);
+      })
   }, []);
 
-  
+  if (loading) {
+    return <Loading />
+  }
 
   return (
     <section className="my-8">
