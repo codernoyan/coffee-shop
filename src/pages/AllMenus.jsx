@@ -79,10 +79,10 @@ export default function AllMenus() {
             <div className="mt-3 flex justify-between text-sm">
               <div>
                 <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
-                  Cinnamon Caramel Cream Cold Brew
+                  Caramel Frappuccino® Blended Beverage
                 </h3>
                 <p className="mt-1.5 max-w-[45ch] text-xs text-gray-500">
-                  Cold Brew packed with flavors of cinnamon caramel, topped with vanilla sweet cream cold foam and dusted with even more flavor for a special personal treat.
+                  Caramel syrup meets coffee, milk and ice for a rendezvous in the blender, while whipped cream and buttery caramel sauce layer the love on top.
                 </p>
               </div>
               <p className="text-gray-900 text-lg font-bold">$8</p>
@@ -97,10 +97,10 @@ export default function AllMenus() {
             <div className="mt-3 flex justify-between text-sm">
               <div>
                 <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
-                  Cinnamon Caramel Cream Cold Brew
+                  Espresso Frappuccino® Blended Beverage
                 </h3>
                 <p className="mt-1.5 max-w-[45ch] text-xs text-gray-500">
-                  Cold Brew packed with flavors of cinnamon caramel, topped with vanilla sweet cream cold foam and dusted with even more flavor for a special personal treat.
+                  Coffee is combined with a shot of espresso and milk, then blended with ice to give you a nice little jolt and lots of sipping joy.
                 </p>
               </div>
               <p className="text-gray-900 text-lg font-bold">$8</p>
@@ -115,10 +115,10 @@ export default function AllMenus() {
             <div className="mt-3 flex justify-between text-sm">
               <div>
                 <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
-                  Cinnamon Caramel Cream Cold Brew
+                  Mocha Frappuccino Blended Beverage
                 </h3>
                 <p className="mt-1.5 max-w-[45ch] text-xs text-gray-500">
-                  Cold Brew packed with flavors of cinnamon caramel, topped with vanilla sweet cream cold foam and dusted with even more flavor for a special personal treat.
+                  Mocha sauce, Frappuccino® Roast coffee, milk and ice all come together for a mocha flavor that will leave you wanting more.
                 </p>
               </div>
               <p className="text-gray-900 text-lg font-bold">$8</p>
@@ -133,13 +133,13 @@ export default function AllMenus() {
             <div className="mt-3 flex justify-between text-sm">
               <div>
                 <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
-                  Cinnamon Caramel Cream Cold Brew
+                  Salted Caramel Cream Cold Brew
                 </h3>
                 <p className="mt-1.5 max-w-[45ch] text-xs text-gray-500">
-                  Cold Brew packed with flavors of cinnamon caramel, topped with vanilla sweet cream cold foam and dusted with even more flavor for a special personal treat.
+                  Here is a savory-meets-sweet refreshing beverage certain to delight: our signature, super-smooth cold brew, sweetened with a touch of caramel.
                 </p>
               </div>
-              <p className="text-gray-900 text-lg font-bold">$8</p>
+              <p className="text-gray-900 text-lg font-bold">$9</p>
             </div>
             <div className="mt-2">
               <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
@@ -151,13 +151,13 @@ export default function AllMenus() {
             <div className="mt-3 flex justify-between text-sm">
               <div>
                 <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
-                  Cinnamon Caramel Cream Cold Brew
+                  White Chocolate Macadamia Cream Cold Brew
                 </h3>
                 <p className="mt-1.5 max-w-[45ch] text-xs text-gray-500">
-                  Cold Brew packed with flavors of cinnamon caramel, topped with vanilla sweet cream cold foam and dusted with even more flavor for a special personal treat.
+                  Starbucks® signature cold brew sweetened with macadamia syrup, topped with a silky white-chocolate macadamia cream cold foam.
                 </p>
               </div>
-              <p className="text-gray-900 text-lg font-bold">$8</p>
+              <p className="text-gray-900 text-lg font-bold">$11</p>
             </div>
             <div className="mt-2">
               <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
