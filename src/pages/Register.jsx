@@ -47,12 +47,12 @@ export default function Register() {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        // toast.success('Register with Google successful');
+        toast.success('Register with Google successful');
         navigate('/');
       })
       .catch((error) => {
         console.error(error);
-        // toast.error(error.message);
+        toast.error(error.message);
       })
   };
 
@@ -119,7 +119,7 @@ export default function Register() {
           </button>
           <div className="mt-6 text-center ">
             <span>Already have an account?</span>
-            <Link to="/login" className="text-sm text-green-500 hover:underline dark:text-green-600 font-medium">
+            <Link to="/login" className="text-sm underline text-slate-700 hover:underline dark:text-slate-700 font-medium">
               Login</Link>
           </div>
         </div>
