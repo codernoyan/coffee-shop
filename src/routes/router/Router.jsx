@@ -4,6 +4,7 @@ import Home from "pages/Home";
 import Login from "pages/Login";
 import Register from "pages/Register";
 import { createBrowserRouter } from "react-router-dom";
+import PrivateRoute from "routes/privateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ export const router = createBrowserRouter([
       },
       {
         path: '/all-menus',
-        element: <AllMenus />
+        element: (
+          <PrivateRoute>
+            <AllMenus />
+          </PrivateRoute>
+        )
       },
       {
         path: '/register',
