@@ -34,7 +34,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$4</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 2 */}
@@ -52,7 +52,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$6</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 3 */}
@@ -70,7 +70,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$8</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 4 */}
@@ -88,7 +88,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$8</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 5 */}
@@ -106,7 +106,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$8</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 6 */}
@@ -124,7 +124,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$8</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 7 */}
@@ -142,7 +142,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$9</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
           {/* coffee - 8 */}
@@ -160,7 +160,7 @@ export default function AllMenus() {
               <p className="text-gray-900 text-lg font-bold">$11</p>
             </div>
             <div className="mt-2">
-              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2">Order Now</button>
+              <button className="bg-slate-800 hover:bg-slate-900 text-white font-medium w-full py-2 duration-300 transition-colors">Order Now</button>
             </div>
           </div>
         </div>

@@ -26,9 +26,9 @@ export default function Login() {
         navigate(from, { replace: true });
       })
       .catch((error) => {
+        setLoading(false);
         console.error(error);
         toast.error(error.message);
-        setLoading(false);
       })
   }
 
