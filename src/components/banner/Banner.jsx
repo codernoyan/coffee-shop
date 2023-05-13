@@ -2,7 +2,7 @@ import coffeeImage from 'assets/coffee-2.jpg';
 
 export default function Banner() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 mt-4">
       <div>
         <img src={coffeeImage} alt="coffee" className="aspect-video md:aspect-square object-cover" />
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -38,7 +39,7 @@ export default function Navbar() {
               aria-current="page"
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
             >
-              <a href="/#home" className="font-bold text-slate-700">Coffeebeans</a>
+              <Link to="/" className="font-bold text-slate-700">Coffeebeans</Link>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button

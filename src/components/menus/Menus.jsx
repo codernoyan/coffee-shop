@@ -41,7 +41,7 @@ export default function Menus() {
         } */}
         {/* coffee - 1 */}
         <div className="group block border p-1">
-          <img src={cupOne} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" />
+          <img src={cupOne} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" loading="lazy" />
           <div className="mt-3 flex justify-between text-sm">
             <div>
               <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
@@ -59,7 +59,7 @@ export default function Menus() {
         </div>
         {/* coffee - 2 */}
         <div className="group block border p-1">
-          <img src={cupTwo} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" />
+          <img src={cupTwo} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" loading="lazy" />
           <div className="mt-3 flex justify-between text-sm">
             <div>
               <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
@@ -77,7 +77,7 @@ export default function Menus() {
         </div>
         {/* coffee - 3 */}
         <div className="group block border p-1">
-          <img src={cupThree} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" />
+          <img src={cupThree} alt="coffe" className="h-[350px] w-full object-cover sm:h-[400px]" loading="lazy" />
           <div className="mt-3 flex justify-between text-sm">
             <div>
               <h3 className="text-gray-900 font-bold group-hover:underline group-hover:underline-offset-4">
@@ -96,7 +96,7 @@ export default function Menus() {
       </div>
       {/* see more button */}
       <div className="text-center mt-8">
-        <Link className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500" to="/more-menus">
+        <Link className="group relative inline-block text-sm font-medium text-slate-600 focus:outline-none focus:ring active:text-slate-500" to="/all-menus">
           <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-slate-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0" />
           <span className="relative block border border-current bg-white px-8 py-3">
             See More
